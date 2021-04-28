@@ -6,12 +6,24 @@ import './index.css';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
 import App from './App';
+import Header from './components/header';
+// import Footer from './components/footer';
+import About from './components/about';
+import Projects from './components/projects';
+import Contact from './components/contact';
 import reactDom from 'react-dom';
 
 const routing = (
   <Router>
     <React.StrictMode>
+      <Header />
+      <Switch>
 				<Route exact path="/" component={App} />
+				<Route exact path="/about" component={About} />
+				<Route exact path="/projects" component={Projects} />
+				<Route exact path="/contact" component={Contact} />
+      </Switch>
+      {/* <Footer /> */}
     </React.StrictMode>,
   </Router>
 );
