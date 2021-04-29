@@ -4,12 +4,12 @@ import './index.css';
 
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
-import App from './App';
-import Header from './components/header';
-import Footer from './components/footer';
-import About from './components/about';
-import Projects from './components/projects';
-import Contact from './components/contact';
+import App from './pages/home/App';
+import Header from './pages/header/header';
+import Footer from './pages/footer/footer';
+import About from './pages/about/about';
+import Projects from './pages/about/projects';
+import Contact from './pages/contact/contact';
 import reactDom from 'react-dom';
 
 import Toolbar from '@material-ui/core/Toolbar';
