@@ -8,19 +8,20 @@ import App from './pages/home/App';
 import Header from './pages/header/header';
 import Footer from './pages/footer/footer';
 import About from './pages/about/about';
-import Projects from './pages/about/projects';
+import Projects from './pages/projects/projects';
 import Contact from './pages/contact/contact';
 import reactDom from 'react-dom';
-
+import CssBaseline from '@material-ui/core/CssBaseline';
 import Toolbar from '@material-ui/core/Toolbar';
 import { Container } from '@material-ui/core';
 // import CssBaseline from '@material-ui/core/CssBaseline';
 
+
+
 const routing = (
   <Router>
-    <React.StrictMode>
-      <Container maxWidth='md'>
-        {/* <CssBaseline /> */}
+    <React.Fragment>
+      <Container maxWidth='md' >
         <Toolbar />
         <Header />
         <Switch>
@@ -29,9 +30,9 @@ const routing = (
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/contact" component={Contact} />
         </Switch>
+        <Footer />
       </Container>
-      <Footer />
-    </React.StrictMode>,
+    </React.Fragment>,
   </Router>
 );
 
