@@ -14,7 +14,6 @@ const useStyles = makeStyles((theme) => ({
         }
     },
 	cardMedia: {
-		// paddingTop: '56.25%', // 16:9
         width: '100%',
         height: 250,
         

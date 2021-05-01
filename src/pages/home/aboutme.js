@@ -24,11 +24,12 @@ const useStyles = makeStyles((theme) => ({
 		margin: theme.spacing(1, 1.5),
 	},
     details: {
-        position: 'absolute',
-        top: '20px',
-        left: '20px',
-        color: 'black',
-        // backgroundColor: 'white'
+        [theme.breakpoints.up('md')]: {
+            position: 'absolute',
+            top: '20px',
+            left: '20px',
+            color: 'black',
+        }
     },
     content: {
         flex: '1 0 auto',
