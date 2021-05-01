@@ -44,8 +44,8 @@ function Featured() {
     const classes = useStyles();
     return (
         <React.Fragment>
-            <Grid item xs={12} md={12}>
-                <Card className={classes.root}>
+            <Grid item xs={12} md={12} >
+                <Card className={classes.root} >
                     <CardMedia
                             className={classes.media}
                             image="https://i.redd.it/v2cmfx8rbdv11.jpg"
@@ -55,10 +55,10 @@ function Featured() {
                     <div className={classes.details}>
                         <CardContent className={classes.content}>
                             <Typography component="h5" variant="h5">
-                                Live From Space
+                                Project
                             </Typography>
                             <Typography variant="subtitle1" color="textSecondary">
-                                Mac Miller
+                                Description
                             </Typography>
                         </CardContent>
                     </div>

@@ -7,9 +7,6 @@ import { NavLink } from 'react-router-dom';
 
 export default function SimpleMenu() {
     const useStyles = makeStyles((theme) => ({
-        appBar: {
-            borderBottom: `1px solid ${theme.palette.divider}`,
-        },
         link: {
             margin: theme.spacing(1, 1.5),
         },

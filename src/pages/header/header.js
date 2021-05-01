@@ -9,11 +9,14 @@ import Link from '@material-ui/core/Link';
 import SimpleMenu from './menu'
 import PropTypes from 'prop-types';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+import Box from '@material-ui/core/Box';
+import { Opacity } from '@material-ui/icons';
 
 
 const useStyles = makeStyles((theme) => ({
 	appBar: {
-		borderBottom: `1px solid ${theme.palette.divider}`,
+		borderBottom: `2px solid #4E5B31`,
+		backgroundColor: 'rgba(250, 250, 250, 0.90)',
 	},
 	toolbarTitle: {
 		flexGrow: 1,
@@ -51,7 +54,6 @@ function Header(props) {
 		<React.Fragment>
 			<ElevationScroll {...props}>
 				<AppBar
-					color="default"
 					elevation={0}
 					className={classes.appBar}
 				>
