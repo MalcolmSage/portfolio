@@ -5,11 +5,13 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
 
 
 
 const useStyles = makeStyles((theme) => ({
     root: {
+        backgroundColor: '#4E5B31',
         [theme.breakpoints.up('md')]: {
             display: 'flex',
             position: 'relative',
@@ -47,7 +49,7 @@ function Social() {
         <React.Fragment>
             <Grid item xs={12} sm={4}>
 				<Grid container spacing={1} justify='center' direction='column'>
-                    <Grid item xs={12}>
+                    <Grid item xs={12} >
                         <Card className={classes.root}>
                             <CardMedia
                                     className={classes.media}
@@ -56,12 +58,14 @@ function Social() {
                                 />
                             <div className={classes.details}>
                                 <CardContent className={classes.content}>
+                                    <Box color='white'>
                                     <Typography component="h5" variant="h5">
                                         Youtube
                                     </Typography>
-                                    <Typography variant="subtitle1" color="textSecondary">
+                                    <Typography variant="subtitle1">
                                         Malcolm Sage
                                     </Typography>
+                                    </Box>
                                 </CardContent>
                             </div>
                         </Card>
@@ -75,12 +79,14 @@ function Social() {
                                 />
                             <div className={classes.details}>
                                 <CardContent className={classes.content}>
+                                    <Box color='white'>
                                     <Typography component="h5" variant="h5">
                                         GitHub
                                     </Typography>
-                                    <Typography variant="subtitle1" color="textSecondary">
+                                    <Typography variant="subtitle1">
                                         Malcolm Sage
                                     </Typography>
+                                    </Box>
                                 </CardContent>
                             </div>
                         </Card>
@@ -94,12 +100,14 @@ function Social() {
                                 />
                             <div className={classes.details}>
                                 <CardContent className={classes.content}>
+                                    <Box color='white'>
                                     <Typography component="h5" variant="h5">
                                         Contact Me
                                     </Typography>
-                                    <Typography variant="subtitle1" color="textSecondary">
+                                    <Typography variant="subtitle1">
                                         Malcolm Sage
                                     </Typography>
+                                    </Box>
                                 </CardContent>
                             </div>
                         </Card>

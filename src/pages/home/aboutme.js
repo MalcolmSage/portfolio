@@ -66,7 +66,7 @@ function AboutMe() {
                                 Malcolm Sage is a forward-thinking software engineer, with a knack for problem solving and a strong work ethic thanks to his nearly a decades worth of military experience.
                                 </Typography>
                                 <Grid container justify='flex-end'>
-                                    <Box bgcolor="#4E5B31" p={.5} borderRadius="borderRadius">
+                                    <Box bgcolor="#4E5B31" p={.5} marginTop='11px' borderRadius="borderRadius">
                                         <Typography variant="body2" align='right' bgcolor="#4E5B31">
                                         <Link
                                             component={NavLink}
@@ -75,7 +75,7 @@ function AboutMe() {
                                             // color="textPrimary"
                                         >
                                             <Box color="white">
-                                                About Me >>
+                                                More
                                             </Box>
                                         </Link>
                                         </Typography>
