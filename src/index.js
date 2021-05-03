@@ -8,7 +8,7 @@ import App from './pages/home/App';
 import Header from './pages/header/header';
 import Footer from './pages/footer/footer';
 import About from './pages/about/about';
-import Projects from './pages/projects/projects';
+import Projects from './pages/projects/App';
 import Contact from './pages/contact/contact';
 import reactDom from 'react-dom';
 import CssBaseline from '@material-ui/core/CssBaseline';
