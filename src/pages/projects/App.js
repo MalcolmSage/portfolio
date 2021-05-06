@@ -12,7 +12,7 @@ function Project() {
     });
 
     useEffect(() => {
-        axiosInstance.get().then((res) => {
+        axiosInstance.get('projects/').then((res) => {
             const allProjects = res.data;
             setProjectState({ loading: false, projects: allProjects });
         });

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axiosInstance from '../../axios';
+import axiosInstance from '../../../axios';
 import { useParams } from 'react-router-dom';
 //MaterialUI
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -21,13 +21,13 @@ export default function Project() {
 	const classes = useStyles();
 
 	const [data, setData] = useState({
-		projects: [],
+		project: [],
 	});
 
 	useEffect(() => {
-		axiosInstance.get('project/' + slug).then((res) => {
+		axiosInstance.get('projects/' + slug).then((res) => {
 			setData({
-				posts: res.data,
+				project: res.data,
 			});
 			console.log(res.data);
 		});
@@ -46,7 +46,7 @@ export default function Project() {
 						color="textPrimary"
 						gutterBottom
 					>
-						{data.projects.title}{' '}
+						{data.project.title}{' '}
 					</Typography>{' '}
 					<Typography
 						variant="h5"
@@ -54,7 +54,7 @@ export default function Project() {
 						color="textSecondary"
 						paragraph
 					>
-						{data.projects.excerpt}{' '}
+						{data.project.excerpt}{' '}
 					</Typography>{' '}
 				</Container>{' '}
 			</div>{' '}

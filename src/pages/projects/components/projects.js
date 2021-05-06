@@ -21,11 +21,11 @@ const useStyles = makeStyles((theme) => ({
 				? theme.palette.grey[200]
 				: theme.palette.grey[700],
 	},
-	postTitle: {
+	projectTitle: {
 		fontSize: '16px',
 		textAlign: 'left',
 	},
-	postText: {
+	projectText: {
 		display: 'flex',
 		justifyContent: 'left',
 		alignItems: 'baseline',
@@ -50,7 +50,7 @@ const Projects = (props) => {
 								<Card className={classes.card}>
 									<Link
 										color="textPrimary"
-										href={'post/' + project.slug}
+										href={'project/' + project.slug}
 										className={classes.link}
 									>
 										<CardMedia
@@ -64,11 +64,11 @@ const Projects = (props) => {
 											gutterBottom
 											variant="h6"
 											component="h2"
-											className={classes.postTitle}
+											className={classes.projectTitle}
 										>
 											{project.title.substr(0, 50)}...
 										</Typography>
-										<div className={classes.postText}>
+										<div className={classes.projectText}>
 											<Typography color="textSecondary">
 												{project.excerpt.substr(0, 40)}...
 											</Typography>

@@ -9,6 +9,7 @@ import Header from './pages/header/header';
 import Footer from './pages/footer/footer';
 import About from './pages/about/about';
 import Projects from './pages/projects/App';
+import Single from './pages/projects/components/single';
 import Contact from './pages/contact/contact';
 import reactDom from 'react-dom';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -29,6 +30,7 @@ const routing = (
           <Route exact path="/about" component={About} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/contact" component={Contact} />
+				  <Route path="/project/:slug" component={Single} />
         </Switch>
         <Footer />
       </Container>
