@@ -6,7 +6,11 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
+import Box from '@material-ui/core/Box';
 import Link from '@material-ui/core/Link';
+import { NavLink } from 'react-router-dom';
+
+
 
 const useStyles = makeStyles((theme) => ({
 	cardMedia: {
@@ -32,6 +36,12 @@ const useStyles = makeStyles((theme) => ({
 		fontSize: '12px',
 		textAlign: 'left',
 		marginBottom: theme.spacing(2),
+	},
+	links: {
+		marginBottom: theme.spacing(2),
+		border: `2px solid black`,
+		borderRadius: '10%',
+		width: 30,
 	},
 }));
 
@@ -78,6 +88,53 @@ const Projects = (props) => {
 										</Typography>
 										</div>
 									</CardContent>
+
+
+									{/*Links  */}
+									<Grid container justify='space-around' alignItems='flex-start' >
+										<Box className={classes.links} bgcolor='darkgreen'>
+											<Typography variant="body2" align='center'>
+											<Link
+												component={NavLink}
+												to="/about"
+												underline="none"
+												// color="textPrimary"
+											>
+												<Box color="white">
+													Git
+												</Box>
+											</Link>
+											</Typography>
+										</Box>
+										<Box className={classes.links} bgcolor='darkred'>
+											<Typography variant="body2" align='center'>
+											<Link
+												component={NavLink}
+												to="/about"
+												underline="none"
+												// color="textPrimary"
+											>
+												<Box color="white">
+													Blog
+												</Box>
+											</Link>
+											</Typography>
+										</Box>
+										<Box className={classes.links} bgcolor='blue'>
+											<Typography variant="body2" align='center'>
+											<Link
+												component={NavLink}
+												to="/about"
+												underline="none"
+												// color="textPrimary"
+											>
+												<Box color="white">
+													Live
+												</Box>
+											</Link>
+											</Typography>
+										</Box>
+									</Grid>									
 								</Card>
 							</Grid>
 						);

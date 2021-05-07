@@ -63,8 +63,6 @@ function Project() {
                     </Typography>
                 </Box>
             </Grid>
-
-
             <ProjectLoading isLoading={projectState.loading} projects={projectState.projects} />
         </Grid> 
         </div>
