@@ -41,7 +41,7 @@ function AboutMe() {
                                 <CardMedia
                                         className={classes.media}
                                         image="https://media-exp1.licdn.com/dms/image/C5603AQGZZpjpvV2tOw/profile-displayphoto-shrink_800_800/0/1607277352379?e=1625097600&v=beta&t=vq8TcTZ3Dwt4Ed0ZzyDUsYE7kU_SfTJDO3gKSuOyQNM"
-                                        title="Image title"
+                                        title="Malcolm Sage"
                                     />
                             </Card>
                         </Grid>
