@@ -51,7 +51,6 @@ const Projects = (props) => {
 	if (!projects || projects.length === 0) return <p>Can not find any projects, sorry</p>;
 	return (
 		<React.Fragment>
-			<Container maxWidth="md" component="main">
 				<Grid container spacing={2} alignItems="flex-end">
 					{projects.map((project) => {
 						return (
@@ -140,7 +139,6 @@ const Projects = (props) => {
 						);
 					})}
 				</Grid>
-			</Container>
 		</React.Fragment>
 	);
 };

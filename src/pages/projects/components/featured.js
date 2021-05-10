@@ -19,12 +19,13 @@ const useStyles = makeStyles((theme) => ({
 	// link: {
 	// 	margin: theme.spacing(1, 1.5),
 	// },
-	cardHeader: {
-		backgroundColor:
-			theme.palette.type === 'light'
-				? theme.palette.grey[200]
-				: theme.palette.grey[700],
-	},
+	// cardHeader: {
+	// 	backgroundColor:
+	// 		theme.palette.type === 'light'
+	// 			? theme.palette.grey[200]
+	// 			: theme.palette.grey[700],
+	// },
+
 	projectTitle: {
 		fontSize: '16px',
 		textAlign: 'left',
@@ -49,9 +50,8 @@ const Featured = (props) => {
 	const classes = useStyles();
 	if (!projects || projects.length === 0) return <p>Can not find any projects, sorry</p>;
 	return (
-		<React.Fragment>
-			<Container maxWidth="md" component="main">
-				<Grid container spacing={2} alignItems="flex-end">
+		<React.Fragment>	
+				<Grid container spacing={3} alignItems="flex-end">
 					{projects.map((project) => {
 						if (project.featured) {
 							return (
@@ -69,7 +69,7 @@ const Featured = (props) => {
 											/>
 										</Link>
 										<CardContent className={classes.cardContent}>
-											<Typography
+										<Typography
 												gutterBottom
 												variant="h6"
 												component="h2"
@@ -139,7 +139,6 @@ const Featured = (props) => {
 						}	
 					})}
 				</Grid>
-			</Container>
 		</React.Fragment>
 	);
 };

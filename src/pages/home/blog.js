@@ -46,7 +46,7 @@ function Blog() {
     const classes = useStyles();
     return (
         <React.Fragment>
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} sm={6}>
                 <Card className={classes.root}>
                     <CardMedia
                             className={classes.media}

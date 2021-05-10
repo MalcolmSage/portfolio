@@ -60,7 +60,7 @@ function Header(props) {
 					<Toolbar className={classes.toolbar}>
 						<Typography
 							variant="h6"
-							color="inherit"
+							color="black"
 							noWrap
 							className={classes.toolbarTitle}
 						>

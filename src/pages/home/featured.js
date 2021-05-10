@@ -51,9 +51,7 @@ function Featured() {
                             image="https://i.redd.it/v2cmfx8rbdv11.jpg"
                             title="Image title"
                         />
-                    <CardContent className={classes.cardContent}>
-                    <div className={classes.details}>
-                        <CardContent className={classes.content}>
+                        <CardContent>
                             <Typography component="h5" variant="h5">
                                 Project
                             </Typography>
@@ -61,8 +59,6 @@ function Featured() {
                                 Description
                             </Typography>
                         </CardContent>
-                    </div>
-                    </CardContent>
                 </Card>
             </Grid>
         </React.Fragment>

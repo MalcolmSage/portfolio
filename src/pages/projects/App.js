@@ -42,30 +42,27 @@ function Project() {
     }, [setProjectState]);
 
     return (
-        <div className='Project'>
-        <Grid container>   
-            <Grid container justify='center' className={classes.root}>
-                <Box bgcolor="#4E5B31" p={.5} marginTop='11px' borderRadius="borderRadius">
-                    <Typography variant="h3" align='center'>
-                        <Box color="white">
-                            Featured Projects
-                        </Box>
-                    </Typography>
-                </Box>
-            </Grid>
-            <FeaturedLoading isLoading={projectState.loading} projects={projectState.featured} />
-            <Grid container justify='center' className={classes.root} >
-                <Box bgcolor="#4E5B31" p={.5} marginTop='11px' borderRadius="borderRadius" >
-                    <Typography variant="h4" align='center' >
-                        <Box color="white">
-                            All Projects
-                        </Box>
-                    </Typography>
-                </Box>
-            </Grid>
-            <ProjectLoading isLoading={projectState.loading} projects={projectState.projects} />
-        </Grid> 
-        </div>
+        <Grid item xs={12} md={12} >
+        <Card className={classes.root} square elevation='1'>
+            <CardContent>
+                <Typography variant="h4" gutterBottom >
+                    Projects
+                </Typography>
+                {/* <FeaturedLoading isLoading={projectState.loading} projects={projectState.featured} /> */}
+                <ProjectLoading isLoading={projectState.loading} projects={projectState.projects} /> 
+            </CardContent>            
+                {/* <Grid container justify='center' className={classes.root} >
+                    <Box bgcolor="#4E5B31" p={.5} marginTop='11px' borderRadius="borderRadius" >
+                        <Typography variant="h4" align='center' >
+                            <Box color="white">
+                                All Projects
+                            </Box>
+                        </Typography>
+                    </Box>
+                </Grid> */}
+                {/* <ProjectLoading isLoading={projectState.loading} projects={projectState.projects} /> */}
+        </Card>
+    </Grid> 
     );
 }
 

@@ -4,23 +4,18 @@ import Grid from '@material-ui/core/Grid';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { makeStyles } from '@material-ui/core/styles';
 import Featured from './featured'
-import AboutMe from './aboutme'
-import Blog from './blog'
-
-const useStyles = makeStyles((theme) => ({
-
-}));
+import About from '../about/about'
+import Projects from '../projects/App'
+import Contact from '../contact/contact'
 
 function App() {
-    const classes = useStyles();
 	return (
 		<React.Fragment>
-		<CssBaseline />
-			<Grid container spacing={1} justify='flex-start'>
-				<Featured/>
-				<AboutMe />
-				<Blog />
-			</Grid>
+			<Grid container spacing={2} justify='flex-start'>
+                <About />
+                <Projects />
+                <Contact />
+            </Grid>
 		</React.Fragment>
 	);
 }

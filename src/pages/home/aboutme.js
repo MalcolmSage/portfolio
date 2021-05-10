@@ -7,11 +7,13 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Link from '@material-ui/core/Link';
 import { NavLink } from 'react-router-dom';
+import { Paper } from '@material-ui/core';
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        height: 120,
-        width: 120,
+        height: 140,
+        width: 140,
         marginBottom: 10,
     },
     paper: {
@@ -24,6 +26,10 @@ const useStyles = makeStyles((theme) => ({
         height: '100%',
         
 	},
+    education: {
+        padding: 5,
+        margin: 6,
+    },
     description: {
 		borderTop: `1px solid ${theme.palette.divider}`,
     }
@@ -33,7 +39,7 @@ function AboutMe() {
     const classes = useStyles();
     return (
         <React.Fragment>
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} sm={6}>
                 <Grid container spacing={.5}  >
                     <Grid container spacing={1} >
                         <Grid item>
@@ -46,17 +52,33 @@ function AboutMe() {
                             </Card>
                         </Grid>
                         <Grid item>
-                            <Box color="white" bgcolor="#4E5B31" p={1} borderRadius="borderRadius">
-                                <Typography variant="h5" align='left'>
-                                    Malcolm Sage
-                                </Typography>
-                            </Box>
-                                <Typography variant="subtitle1" align='left'>
-                                    Software Engineer
-                                </Typography>
-                                <Typography variant="subtitle2" align='left'>
-                                    Full-Stack Developer
-                                </Typography>
+                            <Typography variant="body1" gutterBottom>
+                                Software Engineer | Full-Stack Developer
+                            </Typography>
+                            <Card className={classes.education}>
+                                <Grid container>
+                                    <Grid item xs={12}>
+                                        <Typography variant="body2" >
+                                            General Assembly, SE Immersive Program
+                                        </Typography>
+                                        <Typography variant='caption' color="textSecondary" gutterBottom>
+                                            02/2021 - 04/2021
+                                        </Typography>
+                                    </Grid>
+                                </Grid>
+                            </Card>
+                            <Card className={classes.education}>
+                            <Grid container>
+                                    <Grid item xs={12}>
+                                        <Typography variant="body2" >
+                                            Harvard, CS50's Intro to CS
+                                        </Typography>
+                                        <Typography variant='caption' color="textSecondary" gutterBottom>
+                                            04/2021 - PRESENT
+                                        </Typography>
+                                    </Grid>
+                                </Grid>
+                            </Card>
                         </Grid>  
                     </Grid>
                     <Grid item xs={12} sm container className={classes.description}>

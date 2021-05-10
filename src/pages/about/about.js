@@ -16,19 +16,19 @@ const useStyles = makeStyles((theme) => ({
         }
     },
 	media: {
-        minWidth: 250,
-        width: 250,
-        height: 250,
+        minWidth: 290,
+        width: 290,
+        height: 290,
         [theme.breakpoints.down('sm')]: {
             width: '100%',
             height: 300,
         }
         
 	},
-	links: {
+    education: {
 		padding: theme.spacing(1, 3),
-        margin: 4
-	},
+        margin: 4,
+    },
     details: {
         display: 'flex',
         flexDirection: 'column',
@@ -48,9 +48,8 @@ function About() {
     const classes = useStyles();
     return (
         <React.Fragment>
-			<Grid container spacing={2} justify='flex-start'>
                 <Grid item xs={12} md={12} >
-                    <Card className={classes.root} square elevation='0'>
+                    <Card className={classes.root} square elevation=''>
                         <CardMedia
                         
                             className={classes.media}
@@ -61,7 +60,44 @@ function About() {
                                 <Typography variant="h5" gutterBottom>
                                 Software Engineer | Full-Stack Developer
                                 </Typography>
-
+                                <Card className={classes.education}>
+                                    <Grid container>
+                                        <Grid item xs={12}>
+                                            <Typography variant="button" >
+                                                General Assembly, SE Immersive Program
+                                            </Typography>
+                                        </Grid>
+                                        <Grid item xs={12}>
+                                            <Typography variant='caption' color="textSecondary" gutterBottom>
+                                                02/2021 - 04/2021
+                                            </Typography>
+                                        </Grid>
+                                        <Grid item xs={12}>
+                                            <Typography variant='body2'>
+                                                Applied skills in JavaScript, Python, React and Django in a 500-hour full-time course.
+                                            </Typography>
+                                        </Grid>
+                                    </Grid>
+                                </Card>
+                                <Card className={classes.education}>
+                                    <Grid container>
+                                        <Grid item xs={12}>
+                                            <Typography variant="button" >
+                                                Harvard, CS50's Introduction to Computer Science
+                                            </Typography>
+                                        </Grid>
+                                        <Grid item xs={12}>
+                                            <Typography variant='caption' color="textSecondary" gutterBottom>
+                                                04/2021 - PRESENT
+                                            </Typography>
+                                        </Grid>
+                                        <Grid item xs={12}>
+                                            <Typography variant='body2'>
+                                                Trained to think algorithmically and solve problems efficiently in areas such as: abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web programming.
+                                            </Typography>
+                                        </Grid>
+                                    </Grid>
+                                </Card>
                         </CardContent>
                     </Card>
                 </Grid>
@@ -80,7 +116,6 @@ function About() {
                         </CardContent>
                     </Card>
                 </Grid>
-            </Grid>
         </React.Fragment>
     );
 }
