@@ -5,7 +5,6 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
 
 
 
@@ -111,7 +110,7 @@ function About() {
                                 Malcolm Sage is a forward-thinking software engineer, with a knack for problem solving and a strong work ethic thanks to his nearly a decades worth of military experience.
                                 </Typography>
                                 <Typography variant="h6" color="textSecondary" paragraph>
-                                Malcolm comes prepackaged with a strong sense for attention to detail, critical thinking and problem solving, communication skills, leadership, and a determination to grow. He values maintaining broad knowledge to ensure he can pick the right tool for the job, so he is deeply focused on learning and improving in multiple programming languages, libraries and frameworks.
+                                Malcolm comes prepackaged with a strong sense for attention to detail, critical thinking, communication skills, leadership, and a determination to grow. He values maintaining broad knowledge to ensure he can pick the right tool for the job, so he is deeply focused on learning and improving in multiple programming languages, libraries and frameworks.
                                 </Typography>
                         </CardContent>
                     </Card>

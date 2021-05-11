@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
 	footer: {
 		borderTop: `1px solid ${theme.palette.divider}`,
 		marginTop: theme.spacing(8),
-		paddingTop: theme.spacing(3),
+		// paddingTop: theme.spacing(3),
 		paddingBottom: theme.spacing(1),
 		[theme.breakpoints.up('sm')]: {
 			paddingTop: theme.spacing(6),
@@ -38,14 +38,7 @@ function Footer() {
 	return (
 		<React.Fragment>
 			<Container maxWidth="md" component="footer" className={classes.footer}>
-				<Grid container spacing={4} justify="space-evenly">
-					<Paper className={classes.paper}>GitHub</Paper>
-					<Paper className={classes.paper}>Twitter</Paper>
-					<Paper className={classes.paper}>LinkedIn</Paper>
-					<Paper className={classes.paper}>YouTube</Paper>
-					<Paper className={classes.paper}>Instagram</Paper>
-				</Grid>
-				<Box mt={5}>
+				<Box >
 					<Copyright />
 				</Box>
 			</Container>

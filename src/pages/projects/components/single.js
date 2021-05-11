@@ -38,7 +38,7 @@ export default function Project() {
 			<CssBaseline />
 			<div className={classes.paper}> </div>{' '}
 			<div className={classes.heroContent}>
-				<Container maxWidth="sm">
+				<Container maxWidth="md">
 					<Typography
 						component="h1"
 						variant="h2"

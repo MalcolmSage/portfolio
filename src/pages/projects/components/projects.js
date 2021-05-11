@@ -42,6 +42,7 @@ const useStyles = makeStyles((theme) => ({
 		border: `2px solid black`,
 		borderRadius: '10%',
 		width: 30,
+		marginRight: 10
 	},
 }));
 
@@ -90,7 +91,7 @@ const Projects = (props) => {
 
 
 									{/*Links  */}
-									<Grid container justify='space-around' alignItems='flex-start' >
+									<Grid container justify='flex-end' alignItems='flex-start' >
 										<Box className={classes.links} bgcolor='darkgreen'>
 											<Typography variant="body2" align='center'>
 											<Link
@@ -105,7 +106,7 @@ const Projects = (props) => {
 											</Link>
 											</Typography>
 										</Box>
-										<Box className={classes.links} bgcolor='darkred'>
+										{/* <Box className={classes.links} bgcolor='darkred'>
 											<Typography variant="body2" align='center'>
 											<Link
 												component={NavLink}
@@ -118,7 +119,7 @@ const Projects = (props) => {
 												</Box>
 											</Link>
 											</Typography>
-										</Box>
+										</Box> */}
 										<Box className={classes.links} bgcolor='blue'>
 											<Typography variant="body2" align='center'>
 											<Link
