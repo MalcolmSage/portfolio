@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
-// import { makeStyles } from '@material-ui/core/styles';
 import Projects from './components/projects';
 import ProjectLoadingComponent from './components/projectLoading';
-import Featured from './components/featured';
-import FeaturedLoadingComponent from './components/featuredLoading';
+// import Featured from './components/featured';
+// import FeaturedLoadingComponent from './components/featuredLoading';
 import axiosInstance from '../../axios';
 
 import { makeStyles } from '@material-ui/core/styles';

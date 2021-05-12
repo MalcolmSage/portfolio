@@ -28,7 +28,6 @@ export default function FormPropsTextFields() {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log('Name', Name, 'Email', Email, 'Message', Message);
-    setName = '';
   };
   return (
     <Grid item xs={12} md={12} >

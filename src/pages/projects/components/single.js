@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Project() {
-	const { slug } = useParams();
+	const slug = useParams();
 	const classes = useStyles();
 
 	const [data, setData] = useState({
