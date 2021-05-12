@@ -9,10 +9,8 @@ import axiosInstance from '../../axios';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -24,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
 function Project() {
     const classes = useStyles();
     const ProjectLoading = ProjectLoadingComponent(Projects);
-    const FeaturedLoading = FeaturedLoadingComponent(Featured);
+    // const FeaturedLoading = FeaturedLoadingComponent(Featured);
     const [projectState, setProjectState] = useState({
         loading: true,
         fLoading: true,

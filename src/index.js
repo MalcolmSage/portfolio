@@ -12,10 +12,8 @@ import Projects from './pages/projects/App';
 import Single from './pages/projects/components/single';
 import Contact from './pages/contact/contact';
 import reactDom from 'react-dom';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import Toolbar from '@material-ui/core/Toolbar';
 import { Container } from '@material-ui/core';
-// import CssBaseline from '@material-ui/core/CssBaseline';
 
 
 

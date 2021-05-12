@@ -21,20 +21,14 @@ const useStyles = makeStyles((theme) => ({
 
 export default function FormPropsTextFields() {
   const classes = useStyles();
-  const [value, setValue] = React.useState('');
   const [Name, setName] = React.useState('');
   const [Email, setEmail] = React.useState('');
   const [Message, setMessage] = React.useState('');
 
-
-
-  const handleChange = (event) => {
-    setValue(event.target.value);
-  };
-
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log('Name', Name, 'Email', Email, 'Message', Message);
+    setName = '';
   };
   return (
     <Grid item xs={12} md={12} >
@@ -72,8 +66,6 @@ export default function FormPropsTextFields() {
                     label='Message'
                     multiline
                     rowsMax={4}
-                    value={value}
-                    onChange={handleChange}
                     variant="outlined"
                     />
                     <Button
