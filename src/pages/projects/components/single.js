@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Project() {
-	const slug = useParams();
+	const { slug } = useParams();
 	const classes = useStyles();
 
 	const [data, setData] = useState({
@@ -31,7 +31,7 @@ export default function Project() {
 			});
 			console.log(res.data);
 		});
-	}, [setData]);
+	}, [setData, slug]);
 
 	return (
 		<Container component="main" maxWidth="md">

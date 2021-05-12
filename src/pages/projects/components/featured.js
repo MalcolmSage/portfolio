@@ -51,7 +51,7 @@ const Featured = (props) => {
 	return (
 		<React.Fragment>	
 				<Grid container spacing={3} alignItems="flex-end">
-					{projects.map((project) => {
+					{projects.forEach((project) => {
   						if (project.featured){
 							return (
 								<Grid item key={project.id} xs={12} md={4}>
