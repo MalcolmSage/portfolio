@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'https://msage-projects.herokuapp.com/';
+const baseURL = 'https://msage-projects.herokuapp.com/api/';
 
 const axiosInstance = axios.create({
 	baseURL: baseURL,
