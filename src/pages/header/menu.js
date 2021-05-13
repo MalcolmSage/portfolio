@@ -3,8 +3,8 @@ import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import { makeStyles } from '@material-ui/core/styles';
-import { NavLink } from 'react-router-dom';
-import {Link} from 'react-scroll'
+// import { NavLink } from 'react-router-dom';
+// import {Link} from 'react-scroll'
 import './menu.css';
 
 

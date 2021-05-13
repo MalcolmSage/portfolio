@@ -3,7 +3,6 @@ import Grid from '@material-ui/core/Grid';
 import About from '../about/about'
 import Projects from '../projects/App'
 import Contact from '../contact/contact'
-import Box from '@material-ui/core/Box';
 
 function App() {
 	return (
