@@ -39,7 +39,7 @@ function Project() {
     }, [setProjectState]);
 
     return (
-        <Grid item xs={12} md={12} >
+        <Grid item xs={12} md={12} id="projects">
         <Card className={classes.root} square elevation='1'>
             <CardContent>
                 <Typography variant="h4" gutterBottom >

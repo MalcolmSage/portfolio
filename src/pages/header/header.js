@@ -48,24 +48,26 @@ function ElevationScroll(props) {
 function Header(props) {
 	const classes = useStyles();
 	return (
-		<React.Fragment>
-			<ElevationScroll {...props}>
+		<React.Fragment >
+			<ElevationScroll {...props} >
 				<AppBar
 					elevation={0}
 					className={classes.appBar}
 				>
-					<Toolbar className={classes.toolbar}>
+					<Toolbar className={classes.toolbar} >
 						<Typography
 							variant="h6"
 							color="black"
 							noWrap
 							className={classes.toolbarTitle}
+							
 						>
 							<Link
 								component={NavLink}
 								to="/"
 								underline="none"
 								color="textPrimary"
+								
 							>
 								Malcolm Sage
 							</Link>

@@ -46,8 +46,8 @@ const useStyles = makeStyles((theme) => ({
 function About() {
     const classes = useStyles();
     return (
-        <React.Fragment>
-                <Grid item xs={12} md={12} >
+        <React.Fragment >
+                <Grid item xs={12} md={12} id="aboutme">
                     <Card className={classes.root} square elevation=''>
                         <CardMedia
                         
@@ -109,7 +109,7 @@ function About() {
                                 <Typography variant="h6" color="textSecondary" paragraph>
                                 Malcolm Sage is a forward-thinking software engineer, with a knack for problem solving and a strong work ethic thanks to his nearly a decades worth of military experience.
                                 </Typography>
-                                <Typography variant="h6" color="textSecondary" paragraph>
+                                <Typography variant="h6" color="textSecondary" paragraph >
                                 Malcolm comes prepackaged with a strong sense for attention to detail, critical thinking, communication skills, leadership, and a determination to grow. He values maintaining broad knowledge to ensure he can pick the right tool for the job, so he is deeply focused on learning and improving in multiple programming languages, libraries and frameworks.
                                 </Typography>
                         </CardContent>

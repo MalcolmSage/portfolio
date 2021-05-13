@@ -4,6 +4,9 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import { makeStyles } from '@material-ui/core/styles';
 import { NavLink } from 'react-router-dom';
+import {Link} from 'react-scroll'
+import './menu.css';
+
 
 export default function SimpleMenu() {
     const useStyles = makeStyles((theme) => ({
@@ -43,22 +46,20 @@ export default function SimpleMenu() {
             href="#"
             color="primary"
             variant="outlined"
-            className={classes.link}
-            component={NavLink}
-            to="/"            
-          >Home</MenuItem>            
-          <MenuItem onClick={handleClose}        
-          ><Link
-            to='/#Projects'
-          >Projects</Link>Projects</MenuItem>
+            className={classes.link}          
+          ><a href="#aboutme"> About Me </a></MenuItem>
           <MenuItem onClick={handleClose}
             href="#"
             color="primary"
             variant="outlined"
-            className={classes.link}
-            component={NavLink}
-            to="/contact"            
-          >Contact</MenuItem>                    
+            className={classes.link} 
+          ><a href="#projects"> Projects </a></MenuItem>                         
+          <MenuItem onClick={handleClose}
+            href="#"
+            color="primary"
+            variant="outlined"
+            className={classes.link}            
+          ><a href="#contacts" className={classes.color}> Contacts </a></MenuItem>                    
         </Menu>
       </div>
     );

@@ -30,7 +30,7 @@ export default function FormPropsTextFields() {
     console.log('Name', Name, 'Email', Email, 'Message', Message);
   };
   return (
-    <Grid item xs={12} md={12} >
+    <Grid item xs={12} md={12} id="contacts">
         <Card className={classes.root} square elevation='1'>
             <CardContent>
                 <Typography variant="h4">
