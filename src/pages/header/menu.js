@@ -47,22 +47,10 @@ export default function SimpleMenu() {
             component={NavLink}
             to="/"            
           >Home</MenuItem>            
-          <MenuItem onClick={handleClose}
-            href="#"
-            color="primary"
-            variant="outlined"
-            className={classes.link}
-            component={NavLink}
-            to="/about"            
-          >About Me</MenuItem>
-          <MenuItem onClick={handleClose}
-            href="#"
-            color="primary"
-            variant="outlined"
-            className={classes.link}
-            component={NavLink}
-            to="/projects"            
-          >Projects</MenuItem>
+          <MenuItem onClick={handleClose}        
+          ><Link
+            to='/#Projects'
+          >Projects</Link>Projects</MenuItem>
           <MenuItem onClick={handleClose}
             href="#"
             color="primary"

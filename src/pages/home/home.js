@@ -9,7 +9,7 @@ function App() {
 		<React.Fragment>
 			<Grid container spacing={2} justify='flex-start'>
                 <About />
-                <Projects />
+                <Projects id={'Projects'}/>
                 <Contact />
             </Grid>
 		</React.Fragment>
