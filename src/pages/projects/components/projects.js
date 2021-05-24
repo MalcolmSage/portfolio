@@ -82,7 +82,7 @@ const Projects = () => {
 										</div>
 										<div className={classes.projectText}>
 										<Typography color="textSecondary">
-												{project.tags.map((tag) => '[' + tag + ']')}
+												{project.tags.slice(0, 3).map((tag) => '[' + tag + ']')}
 										</Typography>
 										</div>
 									</CardContent>

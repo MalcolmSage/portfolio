@@ -7,8 +7,8 @@
         "image": "https://source.unsplash.com/random",
         "content": "A Full-Stack application commissioned by a doctor of physical therapy to assist in providing crucial care to their patients. Built with JavaScript, Python, React, Django and Material UI.",
         "status": "wip",
-        "tags": ["Python","Django", "JavaScript", "React"],
-        "git": "",
+        "tags": ["Python","Django", "JavaScript", "React", "Front-End", "Back-End"],
+        "git": "https://github.com/MalcolmSage/Physical-Therapy-Catalog",
         "featured": false
     },
     {
@@ -19,8 +19,8 @@
         "image": "https://source.unsplash.com/random",
         "content": "Sebas was designed to perform essential server tasks, as well as facilitate several types of games.",
         "status": "wip",
-        "tags": ["Python"],
-        "git": "",
+        "tags": ["Python", "Discord", "Bot", "Back-End"],
+        "git": "https://github.com/MalcolmSage/Sebastian",
         "featured": false
     },
     {
@@ -31,8 +31,8 @@
         "image": "https://source.unsplash.com/random",
         "content": "A social platform designed to help cultivate creativity within a community.",
         "status": "wip",
-        "tags": ["Python","Django", "JavaScript", "React"],
-        "git": "",
+        "tags": ["Python","Django", "JavaScript", "React", "Front-End", "Back-End"],
+        "git": "https://github.com/MalcolmSage/Inspiration",
         "featured": false
     }
 ]
