@@ -7,7 +7,6 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Link from '@material-ui/core/Link';
-import { NavLink } from 'react-router-dom';
 import Data from '../project.json'
 
 
@@ -93,8 +92,7 @@ const Projects = () => {
 										<Box className={classes.links} bgcolor='darkgreen'>
 											<Typography variant="body2" align='center'>
 											<Link
-												component={NavLink}
-												to={project.git}
+												href={project.git}
 												underline="none"
 												// color="textPrimary"
 											>
