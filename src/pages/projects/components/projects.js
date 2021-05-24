@@ -5,9 +5,9 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
 import Link from '@material-ui/core/Link';
 import Data from '../project.json'
+import { Button } from '@material-ui/core';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -20,6 +20,9 @@ const useStyles = makeStyles((theme) => ({
 				? theme.palette.grey[200]
 				: theme.palette.grey[700],
 	},
+	button: {
+		margin: theme.spacing(1),
+	  },
 	projectTitle: {
 		fontSize: '16px',
 		textAlign: 'left',
@@ -89,19 +92,16 @@ const Projects = () => {
 
 									{/*Links  */}
 									<Grid container justify='flex-end' alignItems='flex-start' >
-										<Box className={classes.links} bgcolor='darkgreen'>
-											<Typography variant="body2" align='center'>
-											<Link
+											<Button
+												type="submit"
+												variant="contained"
+												color="Secondary"
+												size="small"
+												className={classes.button}
 												href={project.git}
-												underline="none"
-												// color="textPrimary"
 											>
-												<Box color="white">
-													Git
-												</Box>
-											</Link>
-											</Typography>
-										</Box>
+												Git
+											</Button> 
 										{/* <Box className={classes.links} bgcolor='darkred'>
 											<Typography variant="body2" align='center'>
 											<Link
