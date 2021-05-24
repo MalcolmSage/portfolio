@@ -7,10 +7,7 @@ import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Home from './pages/home/home';
 import Header from './pages/header/header';
 import Footer from './pages/footer/footer';
-// import About from './pages/about/about';
-// import Projects from './pages/projects/App';
-import Single from './pages/projects/components/single';
-// import Contact from './pages/contact/contact';
+
 import reactDom from 'react-dom';
 import Toolbar from '@material-ui/core/Toolbar';
 import { Container } from '@material-ui/core';
@@ -25,10 +22,6 @@ const routing = (
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
-          {/* <Route exact path="/about" component={About} />
-          <Route exact path="/projects" component={Projects} />
-          <Route exact path="/contact" component={Contact} /> */}
-				  <Route path="/project/:slug" component={Single} />
         </Switch>
         <Footer />
       </Container>

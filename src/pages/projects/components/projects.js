@@ -8,16 +8,13 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Link from '@material-ui/core/Link';
 import { NavLink } from 'react-router-dom';
-import Data from '../project.json';
+import Data from '../project.json'
 
 
 const useStyles = makeStyles((theme) => ({
 	cardMedia: {
 		paddingTop: '56.25%', // 16:9
 	},
-	// link: {
-	// 	margin: theme.spacing(1, 1.5),
-	// },
 	cardHeader: {
 		backgroundColor:
 			theme.palette.type === 'light'
@@ -47,13 +44,10 @@ const useStyles = makeStyles((theme) => ({
 
 
 
-const Projects = (props) => {
+const Projects = () => {
 	const projects = Data;
-	// const { projects } = props;
 	const classes = useStyles();
 
-
-	// if (!projects || projects.length === 0) return <p>Can not find any projects, sorry</p>;
 	return (
 		<React.Fragment>
 				<Grid container spacing={2} alignItems="flex-end">
@@ -68,7 +62,7 @@ const Projects = (props) => {
 									>
 										<CardMedia
 											className={classes.cardMedia}
-											image="https://source.unsplash.com/random"
+											image={project.image}
 											title="Image title"
 										/>
 									</Link>
@@ -83,12 +77,12 @@ const Projects = (props) => {
 										</Typography>
 										<div className={classes.projectText}>
 											<Typography color="textSecondary">
-												{project.excerpt.substr(0, 40)}...
+												{project.content.substr(0, 40)}...
 											</Typography>
 										</div>
 										<div className={classes.projectText}>
 										<Typography color="textSecondary">
-												{project.tags.map((tag) => tag + ' ')}
+												{project.tags.map((tag) => '[' + tag + ']')}
 										</Typography>
 										</div>
 									</CardContent>
@@ -100,7 +94,7 @@ const Projects = (props) => {
 											<Typography variant="body2" align='center'>
 											<Link
 												component={NavLink}
-												to="/about"
+												to={project.git}
 												underline="none"
 												// color="textPrimary"
 											>
@@ -124,7 +118,7 @@ const Projects = (props) => {
 											</Link>
 											</Typography>
 										</Box> */}
-										<Box className={classes.links} bgcolor='blue'>
+										{/* <Box className={classes.links} bgcolor='blue'>
 											<Typography variant="body2" align='center'>
 											<Link
 												component={NavLink}
@@ -137,7 +131,7 @@ const Projects = (props) => {
 												</Box>
 											</Link>
 											</Typography>
-										</Box>
+										</Box> */}
 									</Grid>									
 								</Card>
 							</Grid>

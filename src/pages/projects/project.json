@@ -1,24 +1,38 @@
 [
     {
         "category": 2,
-        "id": 3,
-        "title": "Sebas - Discord Bot",
-        "slug": "sebas-discord-bot",
-        "excerpt": "Sebas was designed to perform essential server tasks, as well as facilitate several types of games.",
-        "content": "Sebas was designed to perform essential server tasks, as well as facilitate several types of games.",
+        "id": 1,
+        "title": "PT Catalog",
+        "slug": "PT-Catalog",
+        "image": "https://source.unsplash.com/random",
+        "content": "A Full-Stack application commissioned by a doctor of physical therapy to assist in providing crucial care to their patients. Built with JavaScript, Python, React, Django and Material UI.",
         "status": "wip",
-        "tags": [],
+        "tags": ["Python","Django", "JavaScript", "React"],
+        "git": "",
         "featured": false
     },
     {
         "category": 2,
         "id": 2,
+        "title": "Sebas - Discord Bot",
+        "slug": "sebas-discord-bot",
+        "image": "https://source.unsplash.com/random",
+        "content": "Sebas was designed to perform essential server tasks, as well as facilitate several types of games.",
+        "status": "wip",
+        "tags": ["Python"],
+        "git": "",
+        "featured": false
+    },
+    {
+        "category": 2,
+        "id": 3,
         "title": "Inspiration",
         "slug": "inspiration",
-        "excerpt": "A social platform designed to help cultivate creativity within a community.",
+        "image": "https://source.unsplash.com/random",
         "content": "A social platform designed to help cultivate creativity within a community.",
         "status": "wip",
-        "tags": [],
+        "tags": ["Python","Django", "JavaScript", "React"],
+        "git": "",
         "featured": false
     }
 ]
