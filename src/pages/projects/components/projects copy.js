@@ -8,7 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Link from '@material-ui/core/Link';
 import { NavLink } from 'react-router-dom';
-import Data from '../project.json';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -45,15 +45,10 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-
-
 const Projects = (props) => {
-	const projects = Data;
-	// const { projects } = props;
+	const { projects } = props;
 	const classes = useStyles();
-
-
-	// if (!projects || projects.length === 0) return <p>Can not find any projects, sorry</p>;
+	if (!projects || projects.length === 0) return <p>Can not find any projects, sorry</p>;
 	return (
 		<React.Fragment>
 				<Grid container spacing={2} alignItems="flex-end">

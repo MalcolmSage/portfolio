@@ -1,0 +1,24 @@
+[
+    {
+        "category": 2,
+        "id": 3,
+        "title": "Sebas - Discord Bot",
+        "slug": "sebas-discord-bot",
+        "excerpt": "Sebas was designed to perform essential server tasks, as well as facilitate several types of games.",
+        "content": "Sebas was designed to perform essential server tasks, as well as facilitate several types of games.",
+        "status": "wip",
+        "tags": [],
+        "featured": false
+    },
+    {
+        "category": 2,
+        "id": 2,
+        "title": "Inspiration",
+        "slug": "inspiration",
+        "excerpt": "A social platform designed to help cultivate creativity within a community.",
+        "content": "A social platform designed to help cultivate creativity within a community.",
+        "status": "wip",
+        "tags": [],
+        "featured": false
+    }
+]
